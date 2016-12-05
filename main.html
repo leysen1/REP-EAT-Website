@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website trial">
+    <meta name="description" content="REPEAT homePage">
     <meta author="author" content="Charlotte Leysen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>REP-EAT</title>
+    <title>REP-EAT Homepage</title>
     <link rel="icon" href="img/photo.jpg"/>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styleHomepage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -18,30 +18,29 @@
   </head>
 
   <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="10">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="js/myScript.js"></script>
+
 <!-- NAV BAR -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar">
 
       <div class="navbar-header">
-        <a class="navbar-brand" href="#home">REP.EAT</a>
+        <a class="navbar-brand" href="#home"><img style="width: 50px; height: 30px;" src="img/logo.jpg"></a>
       </div>
-      <ul class="nav navbar-nav" style="padding-left: 200px;">
-        <li><a href="#why">Why REP.EAT?</a></li>
-        <li><a href="#how">How it works?</a></li>
-        <li><a href="#">Restaurants</a></li>
+      <ul class="nav navbar-nav" style="padding-left: 150px;">
+        <li><a href="#why">WHY REP.EAT?</a></li>
+        <li><a href="#how">HOW IT WORKS</a></li>
+        <li><a href="Restaurants.html">RESTAURANTS</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right" style="padding-right: 200px;">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Cart</a></li>
-    </ul>
+      <ul class="nav navbar-nav navbar-right" style="padding-right: 150px;">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Cart</a></li>
+      </ul>
 
     </nav>
 <!-- Homescreen box -->   
     <div class="jumbotron" id="home">
         <div class="jumbotrontext">
-            <h1 style="color: #F3A60C;">REP.EAT</h1>
+            <h1>REP.EAT</h1>
             <h3 style="color: grey">SUBSCRIBE TO YOUR FAVOURITE RESTAURANTS AND START SAVING NOW</h3>
             <h3 style="border: 1px solid #000000;">GET STARTED</h3>
               
@@ -49,17 +48,15 @@
     </div>
 <!-- Why REPEAT -->
     <div class="bg-1 text-center" id="why">
-      <div class="banner-header">
-          WHY REP.EAT?
-      </div>
+      <h1>WHY REP.EAT?</h1>
       <h3>Description</h3>
       <p>Description</p>
     </div>  
 <!-- How it works -->
-    <div class="bg-2" id="how">
+    <div id="how">
      
       <div class="banner-header text-center">
-        HOW IT WORKS
+        <h1>HOW IT WORKS</h1>
       </div>
       
       <div style="padding-left: 270px;">
@@ -118,31 +115,31 @@
           </div>
       </div>
 
-      <h3 style= "width: 200px; text-align: center; margin-left: 550px; border: 1px solid #000000;">GET STARTED</h3>
+      <h3 class="getStarted">GET STARTED</h3>
     </div>
 <!-- Our customers say -->
     <div class="customerQuoteBackground text-center" id="customers">
       <div class="banner-header">
-        OUR CUSTOMERS SAY
+        <h1>OUR CUSTOMERS SAY</h1>
       </div>
       <div style="padding-top: 30px; padding-bottom: 50px;">
         
         <div style="float:left; color: black; width: 500px; margin-top: 30px; margin-left: 150px;">
-          <span class="blueCircle"></span>
+          <span class="circle"></span>
           <p class="customerQuote">"REP.EAT changed my life for the better!"</p>
-          <p style="font-size: 10px; text-align: right;">-Kirill S. (21)</p>
+          <p style="font-size: 12px; text-align: right;">-Kirill S. (21)</p>
         </div>
 
         <div style="display: inline-block; color: black; width: 500px; margin-top: 30px;">
-          <span class="blueCircle"></span>
+          <span class="circle"></span>
           <p class="customerQuote">"REP.EAT helped me maintain my diet!"</p>
-          <p style="font-size: 10px; text-align: right;">-Ivan N. (25)</p>
+          <p style="font-size: 12px; text-align: right;">-Ivan N. (25)</p>
         </div>
 
         <div style="margin-top: 30px; color: black; width: 500px; display: inline-block;">
-          <span class="blueCircle"></span>
+          <span class="circle"></span>
           <p class="customerQuote">"REP.EAT helped me maintain my diet!"</p>
-          <p style="font-size: 10px; text-align: right;">-Luca F. (23)</p>
+          <p style="font-size: 12px; text-align: right;">-Luca F. (23)</p>
         </div>
 
         <h3 style= "width: 250px; text-align: center; margin-left: 500px; margin-top: 50px; border: 1px solid #000000; color: #000000;">SUBSCRIBE NOW!</h3>
@@ -151,7 +148,8 @@
 
 
     <footer class="container-fluid text-center">
-      <h1>Footer here</h1>
+      <h1>REP.EAT</h1>
+      <img style="width: 100px; height: 60px;" src="img/logo.jpg">
     </footer>
 
   </body>

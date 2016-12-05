@@ -1,7 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.8;
-    color: #f5f6f7;
+    color: #000000;
 }
 
 p {font-size: 16px;}
@@ -9,7 +9,9 @@ p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 
 .navbar {
-
+  background-color: #f42c3c;
+  opacity: 0.9;
+  border-radius: 0;
   width: 100%;
   position: fixed;
 }
@@ -17,24 +19,23 @@ p {font-size: 16px;}
 .navbar-header {   
   padding: 0px;
   text-align: center;
-  width: 90%;
+  width: 93%;
 
 }
 
 .navbar-brand {
-  color: #000000;
+  padding-top: 10px;
+  color: #FFFFFF;
   float:none;
   position: absolute;
-  text-align: center;
 
 }
 
-.navbar-nav > li {
-  font-size: 14px;
-  width: 120px;
+.navbar-nav > li > a {
+  font-size: 12px;
+  color: #FFFFFF;
+  width: 130px;
   text-align: center;
-  border-right: 1px solid #FFFFFF;
-  border-left: 1px solid #FFFFFF;
 
 }
 
@@ -51,6 +52,7 @@ p {font-size: 16px;}
 
 .jumbotrontext {
   text-align: center;
+  color: #f42c3c;
   width: 400px;
   margin: auto;
   color: black;
@@ -58,25 +60,17 @@ p {font-size: 16px;}
 }
 
 .bg-1 { 
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #f42c3c;
+    color: #FFFFFF;
+    padding: 30px;
 
 }
 
-
-.bg-2 { 
-    width: 100%;
-    background-color: #474e5d;
-    color: #ffffff;
-    padding-bottom: 20px;
-}
-
-.banner-header {
+.banner-header {  
   width: 100%;
-  background-color: #6600ff;
-  color: white;
-  font-size: 30px;
-
+  color: black;
+  font-size: 35px;
+  padding-top: 30px;
 }
 
 .venueImage {
@@ -95,40 +89,56 @@ p {font-size: 16px;}
   border: 2px solid #000000;
   text-align: center;
   padding: 20px;
-  color:  #0000FF;
-  background-color: #FFFFFF;
+  color:  #000000;
+  background-color: #E0E0E0;
 }
 
 .customerQuoteBackground {  
   background-image: url('../img/food.jpg');
-  background-color: currentColor;
-  background-blend-mode: lighten;
+  background-color: #edeeef;
+  background-blend-mode: soft-light;
   background-position: 0% 55%;
   background-size: cover;
   width: 100%;
+  padding-top: 10px;
 }
 
-.blueCircle {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+.circle {
+  background-color: #f42c3c;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
   float: left;
   margin-right: 10px;
 }
 
 .customerQuote {
   text-align: left; 
-  font-size: 30px; 
+  font-size: 25px; 
   line-height: 35px; 
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
+.getStarted {
+  width: 200px; 
+  text-align: 
+  center; margin-left: 
+  550px; 
+  border: 1px solid #000000;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+div > div > h2 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 
     
     /* Add a gray background color and some padding to the footer */
 footer {
-  background-color: #f2f2f2;
+  background-color: #f42c3c;
+  color: #FFFFFF;
   padding: 25px;
 }
 
@@ -136,22 +146,8 @@ li {
   text-align: left;
 }
 
-.bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
-.container {
-  
-
-
-}
-
-.bg-4 { 
-    background-color: #2f2f2f;
-    color: #ffffff;
-}
