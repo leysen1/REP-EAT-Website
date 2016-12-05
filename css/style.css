@@ -49,7 +49,7 @@ p {font-size: 16px;}
   background-size: cover;
   width: 100%;
   height: 580px;
-  color: white;
+
 }
 
 .jumbotrontext {
@@ -102,6 +102,15 @@ p {font-size: 16px;}
   background-color: #FFFFFF;
 }
 
+.customerQuoteBackground {  
+  background-image: url('../img/food.jpg');
+  background-color: currentColor;
+  background-blend-mode: lighten;
+  background-position: 0% 55%;
+  background-size: cover;
+  width: 100%;
+}
+
 .blueCircle {
   background-color: blue;
   width: 100px;
@@ -117,6 +126,7 @@ p {font-size: 16px;}
   line-height: 35px; 
   padding-top: 15px;
 }
+
 
     
     /* Add a gray background color and some padding to the footer */
