@@ -1,0 +1,93 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8;
+    color: #000000;
+}
+
+
+.navbar {
+  background-color: #f42c3c;
+  opacity: 0.9;
+  border-radius: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar-header {   
+  padding: 0px;
+  text-align: center;
+  width: 93%;
+
+}
+
+.navbar-brand {
+  padding-top: 10px;
+  color: #FFFFFF;
+  float:none;
+  position: absolute;
+
+}
+
+.navbar-nav > li > a {
+  font-size: 12px;
+  color: #FFFFFF;
+  width: 130px;
+  text-align: center;
+
+}
+
+
+.container {
+
+
+}
+
+.table {
+  width: 100%;
+  margin: auto;
+
+}
+
+
+.newSubscription {
+  margin: auto;
+  margin-top: 40px;
+
+}
+
+.searchContainer {
+
+}
+
+input[type=text] {
+  width: 250px;
+  font-size: 12px;
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+input[type=text]:focus {
+    
+}
+
+.searchButton {
+  background-color: #f42c3c;
+  border: 1px solid #f42c3c;
+  height: 30px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+}
+
+.searchButton:hover {
+  color: white;
+}
+
+select {
+  width: 60px;
+  height: 30px;
+  border: 0;
+  outline: 1px solid #CCC;
+  background-color: white;
+}
+

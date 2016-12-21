@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="REPEAT homePage">
+    <meta author="author" content="Charlotte Leysen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subscriptions</title>
+    <link rel="icon" href="img/logo.jpg"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styleSubscriptions.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      
+<!-- NAV BAR -->
+
+    <nav class="navbar">
+
+      <div class="navbar-header">
+        <span class="navbar-brand" href="#home"><img style="width: 50px; height: 30px;" src="img/logo.jpg"></span>
+      </div>
+      <ul class="nav navbar-nav" style="padding-left: 20%;">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="Restaurants.html">RESTAURANTS</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="padding-right: 20%;">
+        <li><a href="subscriptions.html"><span></span>SUBSCRIPTIONS</a></li>
+        <li><a href="account.html"><span></span> ACCOUNT</a></li>
+      </ul>
+
+    </nav>
+
+
+    <div style= "display: inline-block; width: 100%; margin-top: 80px;">
+        
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Your Subscriptions</h2>
+          <p></p>            
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Restaurant</th>
+                <th>Credit Left</th>
+                <th>Current Plan Date</th>
+
+                <th>Total Credit</th>
+                <th>Period</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GBK</td>
+                <td>£29</td>
+                <td>07/01/2016</td>
+                <td>£40</td>
+                <td>1M</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Pizza Express</td>
+                <td>£25</td>
+                <td>09/01/2016</td>
+                <td>£30</td>
+                <td>1W</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Vital Ingredient</td>
+                <td>£15</td>
+                <td>15/01/2016</td>
+                <td>£45</td>
+                <td>1M</td>
+                <td>Active</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+    </div>
+
+    <div class="newSubscription">
+        <div class="container">
+            <h3>Add a plan:</h3>           
+          <table style="display: inline-block;" class="table table-hover">
+            <thead>
+              <tr>
+                <th>Restaurant</th>
+                <th>Credit</th>
+                <th>Renewal Period</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td style=""><input type="text" name="search" placeholder="Find a restaurant..."></td>
+                  <!-- need to get data from database -->
+                  <td>
+                    <form action="action_page.php">
+                      <select name="credit">
+                        <option value="nil">-</option>
+                        <option value="credit20">£20</option>
+                        <option value="credit30">£30</option>
+                        <option value="credit40">£40</option>
+                        <option value="credit50">£50</option>
+                      </select>
+                    </form>
+                  </td>
+                  <td>
+                    <form action="action_page.php">
+                      <select style="width: 90px;" name="period">
+                        <option value="nil">-</option>
+                        <option value="period2W">2 weeks</option>
+                        <option value="period1M">1 month</option>
+                        <option value="period3M">3 months</option>
+                      </select>
+                    </form>
+                  </td>
+                  <td style=""><button style="margin-left: 0px;" class="searchButton" type="submit">Create new plan</button></td>
+              </tr>
+            </tbody>
+         </table>
+        </div>
+    </div>
+
+    <div class="container" >
+        <h3>End a plan:</h3>
+        <table style="display: block;" class="table table-hover">
+            <thead>
+              <tr>
+                <th>Restaurant</th>
+                <th>Plan End</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width: 300px;">
+                    <form action="action_page.php">
+                      <select style="width: 250px;" name="current_subscriptions">
+                        <option value="nil">-</option>
+                        <option value="GBK">GBK</option>
+                        <option value="Pizza Express">Pizza Express</option>
+                        <option value="Vital Ingredient">Vital Ingredient</option>
+                      </select>
+                    </form>
+                </td>
+                <td>
+                    eg 07/01/2017
+                </td>
+                <td style=""><button style="margin-left: 0px;" class="searchButton" type="submit">End plan</button></td>
+                </tr>
+            </tbody>
+         </table>
+    </div>
+
+    <div style="margin-bottom: 50px;">
+
+    </div>
+
+
+  </body>
+
+</html>
