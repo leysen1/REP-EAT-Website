@@ -1,10 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,500');
+
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.8;
     color: #000000;
 }
 
-p {font-size: 16px;}
+h1 {
+  font-size: 3vw;
+}
+
+h4 {
+  font-size: 1.7vw;
+  line-height: 90%;
+  margin: 10%;
+}
+
+h3 {
+  font-size: 1.5vw;
+  line-height: 90%;
+  margin: 10%;
+
+}
+
+h2 {
+  font-size: 2.5vw;
+  line-height: 90%;
+  margin: 10%;
+
+}
+
+p {
+  font-size: 1.2vw;
+  line-height: 120%;
+  margin: 10%;
+
+}
+
+li > p {
+  font-size: 1.2vw;
+  line-height: 120%;
+  text-align: left;
+
+}
+
+.extraLight {
+  font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 70px;
+}
+
+.medium {
+  font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+}
 
 .margin {margin-bottom: 45px;}
 
@@ -12,32 +62,86 @@ p {font-size: 16px;}
   background-color: #f42c3c;
   opacity: 0.9;
   border-radius: 0;
-  width: 100%;
   position: fixed;
+  width: 100%;
+
 }
 
-.navbar-header {   
-  padding: 0px;
+
+.navbar-nav {
   text-align: center;
-  width: 93%;
-
+  padding-left: 30vw;
 }
 
-.navbar-brand {
-  padding-top: 10px;
-  color: #FFFFFF;
-  float:none;
-  position: absolute;
-
-}
 
 .navbar-nav > li > a {
   font-size: 12px;
   color: #FFFFFF;
-  width: 130px;
-  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
 
 }
+
+.navLogo {
+  width: 60px;
+  display: inline;
+  float: right;
+  padding-top: 10px;
+  padding-right: 5vw;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #f42c3c;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.navdown {
+    position: relative;
+    display: none;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.navdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+}
+
+/* Links inside the dropdown */
+.navdown-content a {
+    color: black;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.navdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.navdown:hover .navdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.navdown:hover .dropbtn {
+    background-color: #AD2631;
+}
+
+@media (max-width: 780px) {
+  nav ul     { display: none; }
+  .navdown { display: inline; float: left; }
+}
+
 
 .jumbotron {
   margin-bottom: 0px;
@@ -69,18 +173,16 @@ p {font-size: 16px;}
 .banner-header {  
   width: 100%;
   color: black;
-  font-size: 35px;
-  padding-top: 30px;
+  padding: 3vw;
 }
 
 .venueImage {
   margin-right: 2px;
-  width: 250px;
-  height: 250px;
+  width: 20vw;
+  height: 20vw;  
   border-radius: 25px;
   border: 2px solid #000000;
 
-  
 }
 
 .venueImage:hover {
@@ -89,14 +191,15 @@ p {font-size: 16px;}
 
 .iconBlock {
   display: inline-block;
-  width: 250px;
-  height: 250px;
+  width: 20vw;
+  height: 20vw;
   border-radius: 25px;
   border: 2px solid #000000;
   text-align: center;
-  padding: 20px;
+  padding: 1%;
   color: #000000;
-  background-color: #E0E0E0;
+  background-color: #f42c3c;
+  overflow: hidden;
 
 }
 
@@ -104,34 +207,66 @@ p {font-size: 16px;}
   background-color: white;
 }
 
+
+.quoteBlock {
+  display: inline-block;
+  width: 40vw; 
+  margin: 2vw;
+
+}
+
 .customerQuoteBackground {  
   background-image: url('../img/food.jpg');
   background-color: #edeeef;
   background-blend-mode: soft-light;
-  background-position: 0% 55%;
   background-size: cover;
   width: 100%;
-  padding-top: 10px;
+  padding-bottom: 3vw;
 }
 
 .circle {
   background-color: #f42c3c;
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 3vw;
+  display: inline-block;
   float: left;
-  margin-right: 10px;
+  margin: 0px;
 }
 
 .customerQuote {
-  text-align: left; 
-  font-size: 25px; 
-  line-height: 35px; 
-  padding-top: 5px;
+  font-size: 2vw; 
+  line-height: 2.5vw; 
+  display: inline;
+  margin-left: 0px;
+
 }
 
+.quoteAuthor {
+  font-size: 1vw; 
+  margin: 0px; 
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+
 .getStarted {
-  width: 200px; 
+  width: 20%;
+  padding: 0.5%;
+  font-size: 2vw; 
+  text-align: center; 
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #000000;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.getStartedFirst {
+  width: 70%;
+  padding: 2%;
+  font-size: 2vw; 
   text-align: center; 
   margin-right: auto;
   margin-left: auto;
@@ -154,11 +289,14 @@ footer {
 }
 
 li {
-  text-align: left;
+
+  font-size: 1vw;
+  line-height: 90%;
 }
 
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+
 }
 

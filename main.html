@@ -12,9 +12,10 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styleHomepage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
   </head>
 
   <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="10">
@@ -22,26 +23,32 @@
 <!-- NAV BAR -->
     <nav class="navbar">
 
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#home"><img style="width: 50px; height: 30px;" src="img/logo.jpg"></a>
-      </div>
-      <ul class="nav navbar-nav" style="padding-left: 250px;">
+      <ul class="nav navbar-nav" style="">
         <li><a href="main.html"><span></span>HOME</a></li>
         <li><a href="Restaurants.html">RESTAURANTS</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right" style="padding-right: 250px;">
         <li><a href="subscriptions.html"><span></span> SUBSCRIPTIONS</a></li>
         <li><a href="account.html"><span></span> ACCOUNT</a></li>
-
       </ul>
+      <li class="navLogo"><a href="#home"><img style="width: 50px; height: 30px;" src="img/logo.jpg"></a></li>
+
+      <span class="navdown">
+        <button class="dropbtn">Home</button>
+        <span class="navdown-content">
+          <a href="main.html">Home</a>
+          <a href="Restaurants.html">Restaurants</a>
+          <a href="subscriptions.html">Subscriptions</a>
+          <a href="account.html">Accounts</a>
+        </span>
+      </span>
+
 
     </nav>
 <!-- Homescreen box -->   
     <div class="jumbotron" id="home">
         <div class="jumbotrontext">
-            <h1>REP.EAT</h1>
+            <span class="extraLight">REP</span><span class="medium">.EAT</span>  
             <h3 style="color: grey">SUBSCRIBE TO YOUR FAVOURITE RESTAURANTS AND START SAVING NOW</h3>
-            <h3 style="border: 1px solid #000000;">GET STARTED</h3>
+            <h3 class="getStartedFirst">GET STARTED</h3>
               
         </div>
     </div>
@@ -58,7 +65,7 @@
         <h1>HOW IT WORKS</h1>
       </div>
       
-      <div style="background-color: blue; display: block; text-align: center; margin-left: auto; margin-right: auto;">
+      <div style="display: block; text-align: center; margin: auto; width: 100%">
 
         <h2>1. Choose your venue</h2>
             <img class="venueImage" src="img/burger.jpg"/>  
@@ -89,27 +96,27 @@
 
         <h2>3. Eat and Enjoy the REP.EAT benefits!</h2>
           <span class="iconBlock">
-            <h3>Save money!</h3>
-            <ul style="list-style-type:disc">
-              <li>Subscribe and save 20% on food you already eat</li>
-              <li>No additional charges, only discounts</li>
+            <h4>Save money!</h4>
+            <ul style="list-style-type:disc margin-left: 5%; padding-left: 10%">
+              <li style="" ><p>Subscribe and save 20% on food you already eat</p></li>
+              <li><p>No additional charges, only discounts</p></li>
             </ul>
           </span>
 
           <span class="iconBlock">
-            <h3>Save time!</h3>
-            <ul style="list-style-type:disc">
-              <li>Decide once, eat many times</li>
-              <li>Show your REP.EAT code on your phone and get your meal</li>
+            <h4>Save time!</h4>
+            <ul style="list-style-type:disc margin-left: 5%; padding-left: 10%">
+              <li><p>Decide once, eat many times</p></li>
+              <li><p>Show your REP.EAT code on your phone and get your meal</p></li>
             </ul>
           </span>
 
           <span class="iconBlock">
-            <h3>Totally Flexible!</h3>        
-            <ul style="list-style-type:disc">
-              <li>Switch restaurant at the end of the month</li>
-              <li>Switch plan at the end of any month</li>
-              <li>Combine subscriptions to suit your taste</li>
+            <h4>Totally Flexible!</h4>        
+            <ul style="list-style-type:disc margin-left: 5%; padding-left: 10%">
+              <li><p>Switch restaurant at the end of the month</p></li>
+              <li><p>Switch plan at the end of any month</p></li>
+              <li><p>Combine subscriptions to suit your taste</p></li>
             </ul>
           </span>
       </div>
@@ -121,28 +128,26 @@
       <div class="banner-header">
         <h1>OUR CUSTOMERS SAY</h1>
       </div>
-      <div style="padding-top: 30px; padding-bottom: 50px;">
-        
-        <div style="float:left; color: black; width: 500px; margin-top: 30px; margin-left: 150px;">
-          <span class="circle"></span>
-          <p class="customerQuote">"REP.EAT changed my life for the better!"</p>
-          <p style="font-size: 12px; text-align: right;">-Kirill S. (21)</p>
+      <div class="quoteBlock">
+          <span class="circle"></span><p class="customerQuote">"REP.EAT changed my life for the better!"</p>
+          
+          <p class="quoteAuthor">-Kirill S. (21)</p>
         </div>
 
-        <div style="display: inline-block; color: black; width: 500px; margin-top: 30px;">
+        <div class="quoteBlock" style="">
           <span class="circle"></span>
           <p class="customerQuote">"REP.EAT helped me maintain my diet!"</p>
-          <p style="font-size: 12px; text-align: right;">-Ivan N. (25)</p>
+          <p class="quoteAuthor">-Ivan N. (25)</p>
         </div>
 
-        <div style="margin-top: 30px; color: black; width: 500px; display: inline-block;">
+        <div class="quoteBlock" style="">
           <span class="circle"></span>
           <p class="customerQuote">"REP.EAT helped me maintain my diet!"</p>
-          <p style="font-size: 12px; text-align: right;">-Luca F. (23)</p>
+          <p class="quoteAuthor">-Luca F. (23)</p>
         </div>
 
-        <h3 style= "width: 250px; text-align: center; margin-left: 500px; margin-top: 50px; border: 1px solid #000000; color: #000000;">SUBSCRIBE NOW!</h3>
-      </div>
+        <h3 class="getStarted">SUBSCRIBE NOW!</h3>  
+      
     </div>
 
 

@@ -1,28 +1,39 @@
 
+$(document).ready(function () {
+  console.log('document ready');
+  function initializeMap() {
+    console.log('initialize');
+    var myOptions = {
+      center: new google.maps.LatLng(51.1, -0.2),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"),
+        myOptions);
+  }
+  initializeMap();
+});
 
-$(document).ready(function(){
-  // Add scrollspy to <body>
+// Create the dropdown base
+$("<select />").appendTo("nav");
 
-  // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+// Create default option "Go to..."
+$("<option />", {
+   "selected": "selected",
+   "value"   : "",
+   "text"    : "Go to..."
+}).appendTo("nav select");
 
-      // Store hash
-      var hash = this.hash;
+// Populate dropdown with menu items
+$("nav a").each(function() {
+ var el = $(this);
+ $("<option />", {
+     "value"   : el.attr("href"),
+     "text"    : el.text()
+ }).appendTo("nav select");
+});
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }  // End if
-  });
+$("nav select").change(function() {
+  window.location = $(this).find("option:selected").val();
 });
 

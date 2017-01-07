@@ -4,34 +4,89 @@ body {
     color: #000000;
 }
 
+
 .navbar {
   background-color: #f42c3c;
+  opacity: 0.9;
   border-radius: 0;
-  width: 100%;
   position: fixed;
+  width: 100%;
+
 }
 
-.navbar-header {   
-  padding: 0px;
+
+.navbar-nav {
   text-align: center;
-  width: 93%;
-
+  padding-left: 30vw;
 }
 
-.navbar-brand {
-  padding-top: 10px;
-  color: #FFFFFF;
-  float:none;
-  position: absolute;
-
-}
 
 .navbar-nav > li > a {
   font-size: 12px;
   color: #FFFFFF;
-  width: 130px;
-  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
 
+}
+
+.navLogo {
+  width: 60px;
+  display: inline;
+  float: right;
+  padding-top: 10px;
+  padding-right: 5vw;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #f42c3c;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.navdown {
+    position: relative;
+    display: none;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.navdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+}
+
+/* Links inside the dropdown */
+.navdown-content a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.navdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.navdown:hover .navdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.navdown:hover .dropbtn {
+    background-color: #AD2631;
+}
+
+@media (max-width: 780px) {
+  nav ul     { display: none; }
+  .navdown { display: inline; float: left;}
 }
 
 .jumbotron {
@@ -55,7 +110,10 @@ body {
 }
 
 .searchContainer {
-  padding-left: 500px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -95,16 +153,18 @@ input[type=text]:focus {
 
   width: 100%;
   height: 50px;
+  margin: auto;
   background-color: #f42c3c;
-  padding-left: 250px;
+
 }
 
 .foodIcon {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 1.5vw;
+  margin-left: 3vw;
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 20vw;
+  height: 20vw;
+  display: inline-block;
 }
 
 .foodIcon:hover {
@@ -112,25 +172,46 @@ input[type=text]:focus {
 }
 
 .imageText {
-  position: absolute;
-  top: 200px;
+
   width: 100%;
-  height: 50px;
-  padding-left: 15px;
-  padding-top: 10px;
-  text-align: left;
-  line-height: 8px;
+  height: 4.5vw;
+  padding-top: 1vw;
+  margin: 0px;
+  text-align: center;
+  line-height: 0.5vw;
   color:  #000000;
   background-color: #f42c3c;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
+  overflow: hidden;
 }
 
 .venueImage {
-  width: 250px;
-  height: 200px;
+  width: 20vw;
+  height: 16vw;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
   border: 2px solid #000000;
   
 }
+
+#map { 
+  width: 50%;
+  height: 100%;
+  margin: auto;
+
+}
+.mapContainer {
+  width:100%; 
+  height:400px;
+  margin: 0px 0px 30px 0px;
+  
+}
+
+
+@media (max-width: 780px) {
+  #map     { width: 80%; }
+}
+
+
+

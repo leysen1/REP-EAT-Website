@@ -4,6 +4,7 @@ body {
     color: #000000;
 }
 
+
 .navbar {
   background-color: #f42c3c;
   opacity: 0.9;
@@ -34,16 +35,6 @@ body {
   float: right;
   padding-top: 10px;
   padding-right: 5vw;
-}
-
-
-
-.dropdown {
-  width: 60px;
-  height: 30px;
-  border: 0;
-  outline: 1px solid #CCC;
-  background-color: white;
 }
 
 
@@ -97,44 +88,5 @@ body {
 @media (max-width: 780px) {
   nav ul     { display: none; }
   .navdown { display: inline; float: left; }
-}
-
-
-
-.table {
-  width: 100%;
-  margin: auto;
-
-}
-
-.newSubscription {
-  margin: auto;
-  margin-top: 40px;
-
-}
-
-input[type=text] {
-  width: 150px;
-  font-size: 12px;
-  background-color: white;
-  padding: 5px 10px 5px 10px;
-}
-
-input[type=text]:focus {
-    
-}
-
-.searchButton {
-  background-color: #f42c3c;
-  border: 1px solid #f42c3c;
-  height: 30px;
-  width: 
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  
-}
-
-.searchButton:hover {
-  color: white;
 }
 

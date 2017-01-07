@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="REPEAT homePage">
+    <meta name="description" content="REPEAT subscriptions">
     <meta author="author" content="Charlotte Leysen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Subscriptions</title>
@@ -12,27 +12,34 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styleSubscriptions.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
   </head>
-  <body>
+  <body id="subscriptions" data-spy="scroll" data-target=".navbar" data-offset="10">
       
 <!-- NAV BAR -->
 
     <nav class="navbar">
 
-      <div class="navbar-header">
-        <span class="navbar-brand" href="#home"><img style="width: 50px; height: 30px;" src="img/logo.jpg"></span>
-      </div>
-      <ul class="nav navbar-nav" style="padding-left: 20%;">
-        <li><a href="main.html">HOME</a></li>
+      <ul class="nav navbar-nav" style="">
+        <li><a href="main.html"><span></span>HOME</a></li>
         <li><a href="Restaurants.html">RESTAURANTS</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right" style="padding-right: 20%;">
-        <li><a href="subscriptions.html"><span></span>SUBSCRIPTIONS</a></li>
+        <li><a href="subscriptions.html"><span></span> SUBSCRIPTIONS</a></li>
         <li><a href="account.html"><span></span> ACCOUNT</a></li>
       </ul>
+      <li class="navLogo"><a href="#home"><img style="width: 50px; height: 30px;" src="img/logo.jpg"></a></li>
+
+      <span class="navdown">
+        <button class="dropbtn">Subscriptions</button>
+        <span class="navdown-content">
+          <a href="main.html">Home</a>
+          <a href="Restaurants.html">Restaurants</a>
+          <a href="subscriptions.html">Subscriptions</a>
+          <a href="account.html">Accounts</a>
+        </span>
+      </span>
 
     </nav>
 
@@ -103,7 +110,7 @@
                   <!-- need to get data from database -->
                   <td>
                     <form action="action_page.php">
-                      <select name="credit">
+                      <select class = "dropdown" name="credit">
                         <option value="nil">-</option>
                         <option value="credit20">£20</option>
                         <option value="credit30">£30</option>
@@ -114,7 +121,7 @@
                   </td>
                   <td>
                     <form action="action_page.php">
-                      <select style="width: 90px;" name="period">
+                      <select class = "dropdown" style="width: 90px;" name="period">
                         <option value="nil">-</option>
                         <option value="period2W">2 weeks</option>
                         <option value="period1M">1 month</option>
@@ -122,7 +129,7 @@
                       </select>
                     </form>
                   </td>
-                  <td style=""><button style="margin-left: 0px;" class="searchButton" type="submit">Create new plan</button></td>
+                  <td style=""><button style="width: 120px;" class="searchButton" type="submit">Create new plan</button></td>
               </tr>
             </tbody>
          </table>
@@ -131,7 +138,7 @@
 
     <div class="container" >
         <h3>End a plan:</h3>
-        <table style="display: block;" class="table table-hover">
+        <table style="display: inline-block;" class="table table-hover">
             <thead>
               <tr>
                 <th>Restaurant</th>
@@ -141,9 +148,9 @@
             </thead>
             <tbody>
               <tr>
-                <td style="width: 300px;">
+                <td style="">
                     <form action="action_page.php">
-                      <select style="width: 250px;" name="current_subscriptions">
+                      <select class = "dropdown" style="width: 150px;" name="current_subscriptions">
                         <option value="nil">-</option>
                         <option value="GBK">GBK</option>
                         <option value="Pizza Express">Pizza Express</option>

@@ -9,27 +9,35 @@
 	    <title>REP-EAT Restaurants</title>
 	    <link href="css/bootstrap.css" rel="stylesheet">
 	    <link href="css/styleRestaurants.css" rel="stylesheet">
-	    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500" rel="stylesheet">
+
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
 
 	</head>
 	<body id="restaurants" data-spy="scroll" data-target=".navbar" data-offset="10">
 <!-- NAV BAR -->
     <nav class="navbar">
 
-      <div class="navbar-header">
-        <a class="navbar-brand" href="main.html"><img style="width: 50px; height: 30px;" src="img/logo.jpg"></a>
-      </div>
-      <ul class="nav navbar-nav" style="padding-left: 250px;">
-        <li><a href="main.html">HOME</a></li>
+      <ul class="nav navbar-nav" style="">
+        <li><a href="main.html"><span></span>HOME</a></li>
         <li><a href="Restaurants.html">RESTAURANTS</a></li>
+        <li><a href="subscriptions.html"><span></span> SUBSCRIPTIONS</a></li>
+        <li><a href="account.html"><span></span> ACCOUNT</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right" style="padding-right: 250px;">
-        <li><a href="subscriptions.html"></span>SUBSCRIPTIONS</a></li>
-        <li><a href="account.html"></span>ACCOUNT</a></li>
+      <li class="navLogo"><a href="#home"><img style="width: 50px; height: 30px;" src="img/logo.jpg"></a></li>
 
-      </ul>
+      <span class="navdown">
+        <button class="dropbtn">Restaurants</button>
+        <span class="navdown-content">
+          <a href="main.html">Home</a>
+          <a href="Restaurants.html">Restaurants</a>
+          <a href="subscriptions.html">Subscriptions</a>
+          <a href="account.html">Accounts</a>
+        </span>
+      </span>
 
     </nav>
 <!-- Homescreen box -->   
@@ -39,13 +47,18 @@
               
         </div>
     </div>
+    <div>
+        <h3 style="text-align: center; padding: 5px 0px 5px 0px;">Browse nearby restaurants</h3>
+    </div>
 
 <!-- Search box -->
     <div class="searchContainer"> 
     	<span>  	
-	    	<input style="float:left" class="searchBorder" type="text" name="search" placeholder="Enter your postcode here...">
-	    	<button style="margin-left: 0px;" class="searchButton searchBorder" type="submit">Find venues</button>
+	    	<input class="searchBorder" type="text" name="search" placeholder="Enter your postcode here..."><button class="searchButton searchBorder" type="submit">Find venues</button>
     	</span>
+    </div>
+    <div class="mapContainer">
+       <div id="map"></div> 
     </div>
 
 <!-- Toolbar to search -->
@@ -60,56 +73,59 @@
 	      </ul>
     	
     </div>
+
+
+    
 <!-- Table of restaurants -->
-    <div style="padding-left: 250px; padding-right: 100px; padding-top: 30px;">
-    	<div class="foodIcon" style="float:left">
+    <div style="padding-top: 30px;">
+    	<div class="foodIcon" style="">
     		<img class="venueImage" src="img/restaurants/GBK.jpg"/>
     		<div class="imageText">
-    			<p style="font-size: 16px;"><b>GBK - Soho</b></p>
-    			<p style="font-size: 12px;"> Burger, £ </p>
+    			<p style="font-size: 1.3vw; margin: 0vw;"><b>GBK - Soho</b></p>
+    			<p style="font-size: 0.9vw; margin: 1.5vw;"> Burger, £ </p>
     		</div>
 
 
     	</div>
-    	<div class="foodIcon" style="float:left">
+    	<div class="foodIcon" style="">
     		<img class="venueImage" src="img/restaurants/chipotle.jpg"/>  		
     		<div class="imageText">
-    			<p style="font-size: 16px;"><b>Chipotle - Picadilly</b></p>
-    			<p style="font-size: 12px;"> Mexican, burrito, £ </p>
+    			<p style="font-size: 1.3vw; margin: 0vw;"><b>Chipotle - Picadilly</b></p>
+    			<p style="font-size: 0.9vw; margin: 1.5vw;"> Mexican, burrito, £ </p>
     		</div>
     		
 
     	</div>
-    	<div class="foodIcon" style="display: inline-block;">
+    	<div class="foodIcon" style="">
     		<img class="venueImage" src="img/restaurants/francomanca.jpg"/>
     		<div class="imageText">
-    			<p style="font-size: 16px;"><b>Chipotle - Picadilly</b></p>
-    			<p style="font-size: 12px;"> Mexican, burrito, £ </p>
+    			<p style="font-size: 1.3vw; margin: 0vw;"><b>Chipotle - Picadilly</b></p>
+    			<p style="font-size: 0.9vw; margin: 1.5vw;"> Mexican, burrito, £ </p>
     		</div>
 
     	</div>
 
-		<div class="foodIcon" style="float:left">
+		<div class="foodIcon" style="">
     		<img class="venueImage" src="img/restaurants/pizzaexpress.jpg"/>
     		<div class="imageText">
-    			<p style="font-size: 16px;"><b>Pizza Express - Chelsea</b></p>
-    			<p style="font-size: 12px;"> Italian, £ </p>
+    			<p style="font-size: 1.3vw; margin: 0vw;"><b>Pizza Express - Chelsea</b></p>
+    			<p style="font-size: 0.9vw; margin: 1.5vw;"> Italian, £ </p>
     		</div>
 
     	</div>
-    	<div class="foodIcon" style="float:left">
+    	<div class="foodIcon" style="">
     		<img class="venueImage" src="img/restaurants/vital.jpg"/>
     		<div class="imageText">
-    			<p style="font-size: 16px;"><b>Vital Ingredient - Moorgate</b></p>
-    			<p style="font-size: 12px;"> Salad, ££ </p>
+    			<p style="font-size: 1.3vw; margin: 0vw;"><b>Vital Ingredient - Moorgate</b></p>
+    			<p style="font-size: 0.9vw; margin: 1.5vw;"> Salad, ££ </p>
     		</div>
 
     	</div>
-    	<div class="foodIcon" style="display: inline-block;">
+    	<div class="foodIcon" style="">
     		<img class="venueImage" src="img/restaurants/nusa.jpg"/>
     		<div class="imageText">
-    			<p style="font-size: 16px;"><b>Nusa Soup - Picadilly</b></p>
-    			<p style="font-size: 12px;"> Salad, £ </p>
+    			<p style="font-size: 1.3vw; margin: 0vw;"><b>Nusa Soup - Picadilly</b></p>
+    			<p style="font-size: 0.9vw; margin: 1.5vw;"> Salad, £ </p>
     		</div>
 
     	</div>
